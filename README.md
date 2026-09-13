@@ -4,7 +4,7 @@
 
 ## 安装
 
-1. 从本仓库的 Releases 下载 ZIP
+1. 从本仓库的 [Releases](https://github.com/LiHua5487/Limbus-TachibanaSherry-Mod/releases) 下载 ZIP
 2. 将其中的 `TachibanaSherry-Identity` 文件夹放到 `./LetheLauncher-Distribution-7/BepInEx/plugins/Lethe/mods`
 3. 将其中的 `TachibanaSherry.dll` 放到 `./LetheLauncher-Distribution-7/BepInEx/plugins/`
 
