@@ -1,0 +1,505 @@
+{
+  "9760101": {
+    "a": 0,
+    "id": "9760101",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "捏碎苹果",
+        "desc": "[WhenUse]自身的[WitchFactor]每有20层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[Might]强度，使本技能硬币威力+1（最多+2）\n[WhenUse]使自身获得8层[Might]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加1级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加1层[Paralysis]，下回合对目标施加1层[Paralysis]（每回合最多1次）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760102": {
+    "a": 0,
+    "id": "9760102",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "至少也请叫我“小仙子”嘛",
+        "desc": "[WhenUse]自身的[WitchFactor]每有20层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[Might]强度，使本技能硬币威力+1（最多+2）\n[WhenUse]使自身获得7层[Might]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]使自身获得5层[Might]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加2级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加1层[Vulnerable]，下回合对目标施加1层[Vulnerable]（每回合最多1次）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760103": {
+    "a": 0,
+    "id": "9760103",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "A！A！O！",
+        "desc": "[WhenUse]自身的[WitchFactor]每有15层，使本技能基础威力+1（最多+3）\n[WhenUse]消耗至多10层[Might]；每消耗5层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[Might]强度，使本技能硬币威力+1（最多+3）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]施加2级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]使目标的混乱阈值前移10",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnStartCoin]消耗至多10层[Might]，使最终威力+（消耗的[Might]层数/2）",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack]追加（5+本技能总共消耗的[Might]层数）点固定伤害（最多25点）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760104": {
+    "a": 0,
+    "id": "9760104",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "也就是力气大一点嘛",
+        "desc": "[StartBattle]使自身获得（自身的[WitchFactor]层数/15）层[ChargeForceField]（最多5层，每回合最多1次）\n[WhenUse]若自身的[Might]强度不低于5级，且层数不低于10层，则改为使用“A！A！O！”进行反击（每回合最多1次）\n[WhenUse]若自身的[Might]强度低于5级，且层数低于10层，则承受（10-自身的[Might]层数）%生命上限的固定伤害，并使自身的[Might]层数变为10层（每回合最多1次）\n[WhenUse]消耗10层[Might]，使本技能硬币威力+1\n[WhenUse]自身每带有1级[Might]强度，使本技能基础威力+1（最多+3）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加2级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]使自身混乱阈值前移自身生命上限的4%",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]追加10点固定伤害",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760111": {
+    "a": 0,
+    "id": "9760111",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "痛苦是没有意义的",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能\n[Witchization-TachibanaSherry]达到90层时，本技能获得[CantIdentify]\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+3）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+5）\n[WhenUse]使自身获得8层[MonstrousMight]\n[WhenUse]使自身获得3层[Paralysis]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加2级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]下回合使自身获得3层[Paralysis]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760112": {
+    "a": 0,
+    "id": "9760112",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "悲伤是这样表达的吧",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能\n[Witchization-TachibanaSherry]达到90层时，本技能获得[CantIdentify]\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+3）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+6）\n[WhenUse]使自身获得7层[MonstrousMight]\n[WhenUse]使自身失去5点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]使自身获得5层[MonstrousMight]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加4级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]若自身的[Sinking]强度低于10级，则使自身获得10级[Sinking]强度；否则改为使自身获得1层[Sinking]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760113": {
+    "a": 0,
+    "id": "9760113",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "我果然是个怪物",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能\n[Witchization-TachibanaSherry]达到90层时，本技能获得[CantIdentify]\n[WhenUse]若自身的[MonstrousMight]层数不低于15层，且强度不低于10级，则使本技能的所有硬币转化为[ExtractCoin]（每场战斗1次）\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+4）\n[WhenUse]消耗至多10层[MonstrousMight]；每消耗5层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+10）\n[WhenUse]使自身失去7点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]施加4级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]使目标的混乱阈值前移20",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnStartCoin]消耗至多10层[MonstrousMight]，使最终威力+（消耗的[MonstrousMight]层数）",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack]追加（5+本技能总共消耗的[MonstrousMight]层数）点固定伤害（最多25点）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760114": {
+    "a": 0,
+    "id": "9760114",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "我讨厌我自己",
+        "desc": "[StartBattle]使自身获得（自身的[WitchFactor]层数/15）层[ChargeForceField]（最多5层，每回合最多1次）\n[WhenUse]若自身的[MonstrousMight]强度不低于5级，且层数不低于10层，则改为使用“我果然是个怪物”进行反击（每回合最多1次）\n[WhenUse]若自身的[MonstrousMight]强度低于5级，且层数低于10层，则承受（10-自身的[MonstrousMight]层数）%生命上限的固定伤害，并使自身的[MonstrousMight]层数变为10层（每回合最多1次；不会因本效果使自身的生命值低于1）\n[WhenUse]消耗10层[MonstrousMight]，使本技能基础威力+3\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+5）\n[WhenUse]使自身失去7点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]使自身获得5层[MonstrousMight]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加4级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]追加20点固定伤害",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760121": {
+    "a": 0,
+    "id": "9760121",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "痛苦是没有意义的",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能、[CantIdentify]版本\n[CantIdentify]\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+3）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+5）\n[WhenUse]使自身获得8层[MonstrousMight]\n[WhenUse]使自身获得3层[Paralysis]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加2级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]下回合使自身获得3层[Paralysis]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760122": {
+    "a": 0,
+    "id": "9760122",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "悲伤是这样表达的吧",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能、[CantIdentify]版本\n[CantIdentify]\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+3）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+6）\n[WhenUse]使自身获得7层[MonstrousMight]\n[WhenUse]使自身失去5点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]使自身获得5层[MonstrousMight]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]施加4级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack]若自身的[Sinking]强度低于10级，则使自身获得10级[Sinking]强度；否则改为使自身获得1层[Sinking]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760123": {
+    "a": 0,
+    "id": "9760123",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "我果然是个怪物",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能、[CantIdentify]版本\n[CantIdentify]\n[WhenUse]若自身的[MonstrousMight]层数不低于15层，且强度不低于10级，则使本技能的所有硬币转化为[ExtractCoin]（每场战斗1次）\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+4）\n[WhenUse]消耗至多10层[MonstrousMight]；每消耗5层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+10）\n[WhenUse]使自身失去7点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]施加4级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]使目标的混乱阈值前移20",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnStartCoin]消耗至多10层[MonstrousMight]，使最终威力+（消耗的[MonstrousMight]层数）",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack]追加（5+本技能总共消耗的[MonstrousMight]层数）点固定伤害（最多25点）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760133": {
+    "a": 0,
+    "id": "9760133",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "A！A！O！",
+        "desc": "[WhenUse]自身的[WitchFactor]每有15层，使本技能基础威力+1（最多+3）\n[WhenUse]消耗至多10层[Might]；每消耗5层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[Might]强度，使本技能硬币威力+1（最多+3）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]施加2级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]使目标的混乱阈值前移10",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnStartCoin]消耗至多10层[Might]，使最终威力+（消耗的[Might]层数/2）",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack]追加（5+本技能总共消耗的[Might]层数）点固定伤害（最多25点）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9760143": {
+    "a": 0,
+    "id": "9760143",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "我果然是个怪物",
+        "desc": "[Witchization-TachibanaSherry]减算硬币技能\n[WhenUse]若自身的[MonstrousMight]层数不低于15层，且强度不低于10级，则使本技能的所有硬币转化为[ExtractCoin]（每场战斗1次）\n[WhenUse]自身的[WitchFactor]每有20层，使本技能最终威力+1（最多+4）\n[WhenUse]消耗至多10层[MonstrousMight]；每消耗5层，使本技能基础威力+1（最多+2）\n[WhenUse]自身每带有1级[MonstrousMight]强度，使本技能基础威力+1（最多+10）\n[WhenUse]使自身失去7点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]施加4级[Laceration]强度",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack]使目标的混乱阈值前移20",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnStartCoin]消耗至多10层[MonstrousMight]，使最终威力+（消耗的[MonstrousMight]层数）",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack]追加（5+本技能总共消耗的[MonstrousMight]层数）点固定伤害（最多25点）",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

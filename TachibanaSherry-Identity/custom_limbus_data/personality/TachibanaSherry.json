@@ -1,0 +1,136 @@
+{
+  "list": [
+    {
+      "id": 103971,
+      "appearance": "!custom_91020_MiddleFinger_MiddleBroAppearance",
+      "unitKeywordList": [
+        "WitchIsland",
+        "Witch",
+        "FIXER",
+        "SMALL",
+        "EXT_FX_B"
+      ],
+      "associationList": [],
+      "skillKeywordList": [
+        "Charge",
+        "Laceration"
+      ],
+      "characterId": 3,
+      "panicType": 9999,
+      "panicSkillOnErosion": 1000104,
+      "defenseSkillIDList": [
+        9760104,
+        9760114
+      ],
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "mp": 45,
+      "hp": {
+        "defaultStat": 87,
+        "incrementByLevel": 3.2
+      },
+      "defCorrection": 4,
+      "minSpeedList": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "uniqueAttribute": "VIOLET",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": []
+      },
+      "breakSection": {
+        "sectionList": [
+          30
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 9760101,
+          "number": 3
+        },
+        {
+          "skillId": 9760102,
+          "number": 2
+        },
+        {
+          "skillId": 9760103,
+          "number": 1
+        },
+        {
+          "skillId": 9760111,
+          "number": 0
+        },
+        {
+          "skillId": 9760112,
+          "number": 0
+        },
+        {
+          "skillId": 9760113,
+          "number": 0
+        },
+        {
+          "skillId": 9760121,
+          "number": 0
+        },
+        {
+          "skillId": 9760122,
+          "number": 0
+        },
+        {
+          "skillId": 9760123,
+          "number": 0
+        },
+        {
+          "skillId": 9760133,
+          "number": 0
+        },
+        {
+          "skillId": 9760143,
+          "number": 0
+        }
+      ]
+    }
+  ]
+}

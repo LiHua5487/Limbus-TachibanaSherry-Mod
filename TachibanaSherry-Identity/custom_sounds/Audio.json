@@ -1,0 +1,81 @@
+{
+  "sounds": [
+    {
+      "name": "SherryPlayVoiceNormalS1",
+      "file": "SFX/Sherry/NormalS1.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceNormalS2",
+      "file": "SFX/Sherry/NormalS2.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceNormalS3Coin1",
+      "file": "SFX/Sherry/NormalS3Coin1.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceNormalS3Coin2",
+      "file": "SFX/Sherry/NormalS3Coin2.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceNormalS3Coin3",
+      "file": "SFX/Sherry/NormalS3Coin3.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceNormalCounter",
+      "file": "SFX/Sherry/NormalCounter.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceWitchS3Final",
+      "file": "SFX/Sherry/WitchS3Final.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceWitchCounterFinal",
+      "file": "SFX/Sherry/WitchCounterFinal.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceFirstWitch",
+      "file": "SFX/Sherry/FirstWitch.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceStagger",
+      "file": "SFX/Sherry/Stagger.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "SherryPlayVoiceDeath",
+      "file": "SFX/Sherry/Death.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    }
+  ]
+}

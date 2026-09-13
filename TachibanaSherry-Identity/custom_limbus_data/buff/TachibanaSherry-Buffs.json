@@ -1,0 +1,133 @@
+{
+  "list": [
+    {
+      "id": "WitchFactor",
+      "iconId": "WitchFactor",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 100,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "list": [
+        {
+          "ability": "AtkDamageMultiplierByStack",
+          "value": 0.005
+        }
+      ],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "Witchization-TachibanaSherry",
+      "iconId": "Witchization-TachibanaSherry",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "maxStack": 100,
+      "canBeDespelled": false,
+      "canBeDuplicated": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "list": [
+        {
+          "ability": "CantRecoverMpOverValue",
+          "value": 0
+        },
+        {
+          "ability": "OverwriteAtkResistResultIfHigher",
+          "value": 0.5
+        }
+      ],
+      "categoryKeywordList": []
+    },
+    {
+      "id": "Might",
+      "iconId": "Might",
+      "subIdList": [
+        "Charge"
+      ],
+      "buffClass": "UsedTurnReportSinBuff",
+      "attributeType": "VIOLET",
+      "buffType": "Positive",
+      "maxStack": 10,
+      "maxTurn": 20,
+      "canBeDespelled": false,
+      "canBeDuplicated": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "destroyableOnZero": false,
+      "destroyableOnZeroTurn": false,
+      "destroyableOnBothZero": true,
+      "list": [
+        {
+          "ability": "AtkDamageMultiplierByStack",
+          "value": 0.02
+        }
+      ],
+      "categoryKeywordList": [
+        "SIN",
+        "CHARGE"
+      ]
+    },
+    {
+      "id": "MonstrousMight",
+      "iconId": "MonstrousMight",
+      "subIdList": [
+        "Charge"
+      ],
+      "buffClass": "UsedTurnReportSinBuff",
+      "attributeType": "VIOLET",
+      "buffType": "Positive",
+      "maxStack": 10,
+      "maxTurn": 20,
+      "canBeDespelled": false,
+      "canBeDuplicated": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "destroyableOnZero": false,
+      "destroyableOnZeroTurn": false,
+      "destroyableOnBothZero": true,
+      "list": [
+        {
+          "ability": "AtkDamageMultiplierByStack",
+          "value": 0.04
+        }
+      ],
+      "categoryKeywordList": [
+        "SIN",
+        "CHARGE"
+      ]
+    },
+    {
+      "id": "PainInhibition",
+      "iconId": "PainInhibition",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 2,
+      "canBeDespelled": false,
+      "canBeDuplicated": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "list": [],
+      "categoryKeywordList": []
+    },
+    {
+      "id": "Rebuttal",
+      "iconId": "Rebuttal",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "maxStack": 5,
+      "canBeDespelled": true,
+      "list": [
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false,
+      "destroyableOnRetreat": true,
+      "destroyableOnDie": true
+    }
+  ]
+}

@@ -1,0 +1,1179 @@
+{
+  "list": [
+    {
+      "id": 9760101,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760101,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 3,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:tachibana_sherry/LUAMAIN:sherry_voice_skill_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Paralysis",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_s1_next_paralysis"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760102,
+      "skillTier": 2,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760102,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "AZURE",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 4,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:tachibana_sherry/LUAMAIN:sherry_voice_skill_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_gain_five_might"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "actionIndex": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vulnerable",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_s2_next_vulnerable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760103,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760103,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 4,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:tachibana_sherry/LUAMAIN:sherry_voice_skill_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "actionIndex": 1,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "actionIndex": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_stagger_threshold"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "actionIndex": 3,
+              "grade": 2,
+              "color": "GREY",
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnCoinToss/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_coin_start"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_fixed_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760104,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760104,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillMotion": "S4",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 5,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "Modular/TIMING:StartBattle/LUA:tachibana_sherry/LUAMAIN:sherry_counter_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_counter_when_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:tachibana_sherry/LUAMAIN:sherry_voice_skill_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Empty"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_stagger_threshold"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "actionIndex": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_fixed_10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760111,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760111,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 10,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackTail",
+                  "buffData": {
+                    "buffKeyword": "Paralysis",
+                    "target": "Self",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760112,
+      "skillTier": 2,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760112,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "AZURE",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 16,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_gain_five_might"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_witch_s2_coin3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760113,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760113,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 20,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 1,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_stagger_threshold"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 3,
+              "grade": 2,
+              "color": "GREY",
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnCoinToss/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_coin_start"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_fixed_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760114,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760114,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillMotion": "S4",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 12,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "Modular/TIMING:StartBattle/LUA:tachibana_sherry/LUAMAIN:sherry_counter_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_counter_when_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_gain_five_might"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_fixed_20"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760121,
+      "skillTier": 1,
+      "isHiddenForUI": true,
+      "textID": 9760121,
+      "skillData": [
+        {
+          "skillTargetType": "RANDOM",
+          "iconID": 9760111,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": false,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 10,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            },
+            {
+              "scriptName": "HiddenSkill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackTail",
+                  "buffData": {
+                    "buffKeyword": "Paralysis",
+                    "target": "Self",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760122,
+      "skillTier": 2,
+      "isHiddenForUI": true,
+      "textID": 9760122,
+      "skillData": [
+        {
+          "skillTargetType": "RANDOM",
+          "iconID": 9760112,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": false,
+          "attributeType": "AZURE",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 16,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            },
+            {
+              "scriptName": "HiddenSkill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_gain_five_might"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "actionIndex": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_witch_s2_coin3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760123,
+      "skillTier": 3,
+      "isHiddenForUI": true,
+      "textID": 9760123,
+      "skillData": [
+        {
+          "skillTargetType": "RANDOM",
+          "iconID": 9760113,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": false,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 20,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            },
+            {
+              "scriptName": "HiddenSkill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 1,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_stagger_threshold"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 3,
+              "grade": 2,
+              "color": "GREY",
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnCoinToss/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_coin_start"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_fixed_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760133,
+      "skillTier": 3,
+      "isHiddenForUI": true,
+      "textID": 9760103,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760103,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 4,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:tachibana_sherry/LUAMAIN:sherry_voice_skill_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            },
+            {
+              "scriptName": "HiddenSkill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "actionIndex": 1,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "actionIndex": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_stagger_threshold"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "actionIndex": 3,
+              "grade": 2,
+              "color": "GREY",
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnCoinToss/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_coin_start"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_fixed_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9760143,
+      "skillTier": 3,
+      "isHiddenForUI": true,
+      "textID": 9760113,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9760113,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 20,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "MarkSubKeywordChargeBodyArt"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:tachibana_sherry/LUAMAIN:sherry_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:tachibana_sherry/LUAMAIN:sherry_skill_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:FakePower/LUA:tachibana_sherry/LUAMAIN:sherry_fake_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:tachibana_sherry/LUAMAIN:sherry_end_skill"
+            },
+            {
+              "scriptName": "HiddenSkill"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 1,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_stagger_threshold"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "actionIndex": 3,
+              "grade": 2,
+              "color": "GREY",
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnCoinToss/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_coin_start"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_skill3_fixed_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

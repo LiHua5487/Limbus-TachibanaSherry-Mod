@@ -1,0 +1,66 @@
+{
+  "list": [
+    {
+      "id": 97601001,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/LUA:tachibana_sherry/LUAMAIN:sherry_encounter_start",
+        "Modular/TIMING:OnSucceedAttack/LUA:tachibana_sherry/LUAMAIN:sherry_on_hit",
+        "Modular/TIMING:EnemyKill/LUA:tachibana_sherry/LUAMAIN:sherry_on_kill",
+        "Modular/TIMING:OnBreak/LUA:tachibana_sherry/LUAMAIN:sherry_on_break",
+        "Modular/TIMING:RoundStart/LUA:tachibana_sherry/LUAMAIN:sherry_round_start",
+        "Modular/TIMING:AfterSlots/LUA:tachibana_sherry/LUAMAIN:sherry_after_slots",
+        "Modular/TIMING:EndBattle/LUA:tachibana_sherry/LUAMAIN:sherry_end_round"
+      ]
+    },
+    {
+      "id": 97601002,
+      "attributeStockCondition": [],
+      "requireIDList": []
+    },
+    {
+      "id": 97601003,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:Immortal/LUA:tachibana_sherry/LUAMAIN:sherry_immortal"
+      ]
+    },
+    {
+      "id": 97601006,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:StartBattle/LUA:tachibana_sherry/LUAMAIN:sherry_hanna_battle_start",
+        "Modular/TIMING:RoundStart/LUA:tachibana_sherry/LUAMAIN:sherry_hanna_round_start"
+      ]
+    },
+    {
+      "id": 97601004,
+      "attributeStockCondition": [
+        {
+          "type": "VIOLET",
+          "value": 2
+        },
+        {
+          "type": "INDIGO",
+          "value": 2
+        }
+      ],
+      "requireIDList": [
+        "Modular/TIMING:RoundStart/LUA:tachibana_sherry/LUAMAIN:sherry_detective_intuition"
+      ]
+    },
+    {
+      "id": 97601005,
+      "attributeStockCondition": [],
+      "attributeResonanceCondition": [
+        {
+          "type": "VIOLET",
+          "value": 3
+        }
+      ],
+      "requireIDList": [
+        "Modular/TIMING:StartBattle/LUA:tachibana_sherry/LUAMAIN:sherry_support_noop"
+      ]
+    }
+  ]
+}
