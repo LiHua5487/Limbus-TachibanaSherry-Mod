@@ -41,8 +41,8 @@
 
 ### 饼图
 
-<img src="./被动饼图.png" width="49%" />
-<img src="./技能饼图.png" width="49%" />
+<img src="./被动饼图.png" width="40%" />
+<img src="./技能饼图.png" width="40%" />
 
 ### 技能
 
